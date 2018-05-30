@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apoorva.gpandroid.signup"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+   <android.support.design.widget.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/inputLayout">
+       <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/background_color"
+        android:textColor="@color/background_color"
+        android:layout_margin="40dp"
+        android:hint="Enter your Name"
+        android:background="@drawable/edt_bg_selector"
+           android:textSize = "25sp"
+           />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputEmail">
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email  ID"
+        android:textSize = "25sp"
+        android:textColorHint="@color/background_color"
+        android:textColor="@color/background_color"
+        android:layout_margin="40dp"
+        android:background="@drawable/edt_bg_selector"
+        android:id="@+id/e1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+    </android.support.design.widget.TextInputLayout>
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        app:passwordToggleEnabled="true"
+        >
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/edt_bg_selector"
+        android:hint="Create your Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/background_color"
+        android:textColor="@color/background_color"
+        android:textSize = "25sp"
+       />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minimum 6 characters"
+        android:layout_marginLeft="25dp"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Create account"
+        android:textStyle="normal"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/loginbutton_selector"
+        android:layout_marginTop="100dp"
+        android:id="@+id/btn_email_create_account"
+        android:focusable="true"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:padding = "20dp"
+        />
+</LinearLayout>
